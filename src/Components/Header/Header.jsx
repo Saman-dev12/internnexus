@@ -18,7 +18,7 @@ function Header() {
           ready.
         </div>
         <button className={`${classes["kickStartBtn"]} ${classes['buttonClass']}`}>
-          Kick Start Your Career <i class="ri-arrow-right-double-line"></i>
+          Kick Start Your Career <i className="ri-arrow-right-double-line"></i>
         </button>
       </section>
       <section className={classes["right-sec"]}>
