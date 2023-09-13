@@ -54,6 +54,12 @@
     background:#ffffff;
     border-radius: .4rem;
 }
+
+.kickStartBtn:hover{
+    background-color: #0083ab;
+    color: white;
+}
+
 .headSpan{
     color: #0083ab;
 }

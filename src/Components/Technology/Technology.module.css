@@ -1,0 +1,45 @@
+.trending{
+    color : #023e8a
+}
+
+.technologies{
+    display: flex;
+    align-items: center;
+    padding: 0 2.2rem;
+    
+}
+
+.headBox{
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: #023e8a;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box{
+    /* padding: 0 3rem; */
+    transition: .5s;
+}
+
+.box img{
+    width: 10rem;
+    padding-top: 2rem;
+    filter: drop-shadow(5px 5px 10px #cecdcd);
+}
+
+.headBox{
+    filter: drop-shadow(5px 5px 10px #cecdcd);
+    transition: 1s;
+}
+
+.headBox:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.box:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}

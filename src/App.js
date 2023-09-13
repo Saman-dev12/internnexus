@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Header from './Components/Header/Header'
 import Popup from './Components/Popup/Popup';
+import Technology from './Components/Technology/Technology';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <Fragment>
       <Header/>
       {popup && <Popup onClick={setPopup}/>}
+      <Technology/>
     </Fragment>
   )
 }
