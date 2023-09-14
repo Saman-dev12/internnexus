@@ -15,9 +15,9 @@ function Corousel(props) {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item active d-flex">
-            <img src={data.photo} className="d-block" alt="..." />
-            <div className={classes.allData}>
+          <div className={`${classes.all} carousel-item active d-flex`}>
+            <img src={data.photo} className={` d-block`} alt="..." />
+            <div className={` ${classes.allData}`}>
               <div className={classes.dandt}>
                 <span className={classes.date}>
                   <i className="ri-calendar-line"></i> {data.date}

@@ -1,24 +1,55 @@
-.nav{
+/* Mobile-first approach */
+.nav {
     display: flex;
-    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     background-color: #04518b;
     height: 3.8rem;
     border-radius: 20px;
-    margin: 0 0 0 30px;
-    justify-content: space-evenly;
+    margin: 0;
+    padding: 0 1rem; /* Adjust the padding as needed */
+  }
+  
+  .logo {
+    display: flex;
     align-items: center;
-    padding-top: .7rem;
-}
-
-.image{
+  }
+  
+  .image {
     width: 180px;
-    padding-bottom: 20px;
-    position: absolute;
-    top: 28px;
-    left: 60px;
+  }
+  
+  .allItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .navItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line on small screens */
+    justify-content: space-between; /* Space evenly between items */
+    color: #ffffff;
+  }
+  
+  .item {
+    padding: 0.9em;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.2rem; /* Add some margin between items */
+  }
+
+  .item:hover,.item:active{
+    color: #054b81;
+    cursor: pointer;
 }
 
-.navItems li a{
+  .navItems li a{
     list-style: none;
     text-decoration: none;
     color: white;
@@ -27,44 +58,80 @@
     transition: all .5s;    
 }
 
+
 .navItems li a:hover{
     color: #92c1d8;
 }
-
-.navItems{
+  
+  .loginButton {
     display: flex;
-    list-style: none;
-    padding-top: 5px;
-}
-
-.item{
-    padding: .9em ;
+    align-items: center;
+  }
+  
+  .loginBtn {
     font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.item:hover,.item:active{
-    color: #054b81;
-    cursor: pointer;
-}
-
-.loginBtn{
-    position: absolute;
-    font-size:1.1rem;
-    font-family:Arial;
-    color:#ffffff;
+    font-family: Arial;
+    color: #ffffff;
     width: 9rem;
     height: 3rem;
-    top: 27px;
-    right: 60px;
-    transition: all .5s;
+    transition: all 0.5s;
     border-radius: 1rem;
     border: none;
-    background:transparent;
-}
-
-.loginBtn:hover{
-    /* border: 2px solid ; */
+    background: transparent;
+  }
+  
+  .loginBtn:hover {
     background-color: #034374;
     color: white;
-}
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack items vertically */
+      height: auto; /* Allow the header to grow as needed */
+    }
+  
+    .allItems {
+      display: none; /* Hide the navigation items */
+      flex-direction: column; /* Stack items vertically */
+      position: absolute;
+      top: 3.8rem; /* Adjust as needed to control dropdown position */
+      left: 0;
+      right: 0;
+      background-color: #04518b;
+      border-radius: 0 0 20px 20px;
+      z-index: 1; /* Ensure it appears above other content */
+    }
+  
+    .navItems {
+      width: 100%; /* Take up full width */
+      justify-content: center; /* Center items */
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .item {
+      padding: 0.9em;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 0.2rem 0; /* Add some margin between items */
+    }
+  
+    .mobileToggle {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    /* Show the navigation items when the mobileToggle class is applied */
+    .mobileToggle + .allItems {
+      display: flex;
+    }
+
+    
+  }
+  
+  @media (max-width:956px){
+    .navItems{
+      display: none;  
+    }
+  }

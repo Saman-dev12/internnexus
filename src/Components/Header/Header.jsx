@@ -9,13 +9,11 @@ function Header() {
       <Navbar />
       <section className={classes["left-sec"]}>
         <div className={classes["header-heading"]}>
-          From zero experince to your{" "}
-          <span className={classes.headSpan}>Dream job</span>
+          From zero experience to your <span className={classes.headSpan}>Dream job</span>
         </div>
         <div className={classes["header-para"]}>
-          Helping students and recent graduates start their career. Enabling
-          skills development in a live environment, making students industry
-          ready.
+          Helping students and recent graduates start their careers. Enabling
+          skills development in a live environment, making students industry-ready.
         </div>
         <button className={`${classes["kickStartBtn"]} ${classes['buttonClass']}`}>
           Kick Start Your Career <i className="ri-arrow-right-double-line"></i>

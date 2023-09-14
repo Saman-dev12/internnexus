@@ -8,6 +8,14 @@
     right: 1rem;
 }
 
+.all{
+    margin-top: 0 10px;
+}
+
+.image{
+    display: inline;
+}
+
 .allData{
     display: block; 
     padding-left: 1rem;  
@@ -57,4 +65,13 @@
 .exploreBtn:hover{
     color: white;
     background-color: #54abee;
+}
+
+@media (max-width:684px){
+    .all{
+        display: flex;
+    }
+    .image{
+        display: block;
+    }
 }
