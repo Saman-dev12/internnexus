@@ -22,13 +22,16 @@
     width: 100%;
     max-width: 800px; /* Adjust the maximum width as needed */
     text-align: center;
+    /* margin-left: 20rem; */
   }
-  
   .frontImage {
     width: 100%;
     max-width: 500px; /* Adjust the maximum width as needed */
-    margin-top: 2rem;
-  }
+    margin: 2rem auto; /* Center the image horizontally by setting left and right margins to "auto" */
+    display: flex;
+    justify-content: center;
+}
+
   
   .header-heading {
     font-size: 2.1rem;

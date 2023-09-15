@@ -1,0 +1,19 @@
+.works{
+    background:#012A4A;
+}
+
+.works h2{
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-decoration-color: #f8f8f8;
+    text-align: center;
+    padding-top: 4rem;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.works h2:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
