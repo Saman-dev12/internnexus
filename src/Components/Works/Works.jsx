@@ -14,6 +14,7 @@ const ExperienceCard = ({experience}) =>{
     return (<VerticalTimelineElement
     contentStyle={{background:"#1d1836",color:"#fff"}}
     contentArrowStyle = {{borderRight:"7px solid #232631"}}
+    date={experience.step}
     iconStyle={{background:experience.iconBg}}
     icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -71,7 +72,7 @@ function Works() {
     <div className={classes.works}>
      <motion.div variants={textVariant()} >
         {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2  className={ `${styles.sectionHeadText} text-center pt-20`}>How Internnexus Works</h2>
+        <h2  className={ `${styles.sectionHeadText} text-center pt-20`}>How InternNexus Works</h2>
      </motion.div> 
      <div className={`mt-20 flex flex-col`}>
         <VerticalTimeline>

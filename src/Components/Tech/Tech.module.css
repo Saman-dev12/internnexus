@@ -1,0 +1,4 @@
+.hover{
+    transition: .7s;
+    filter: drop-shadow(5px 5px 10px #cecdcd);
+}
